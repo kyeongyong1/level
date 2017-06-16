@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					8F09EC8F1EF140BC00F85D71 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 9FGMBNV8EB;
 						ProvisioningStyle = Automatic;
 					};
 					8F09ECA61EF140BC00F85D71 = {
@@ -418,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9FGMBNV8EB;
 				INFOPLIST_FILE = KILevel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyeong.KILevel;
@@ -430,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9FGMBNV8EB;
 				INFOPLIST_FILE = KILevel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyeong.KILevel;
