@@ -64,31 +64,54 @@ class ViewController: UIViewController {
     }
     
     func displayXY(attitude: CMAttitude) {
-        self.rotX?.text = "\(Double(round(attitude.roll * 100000) / 100000))"
+        let x = translateX(xP: round(attitude.roll * 100000) / 100000)
+        self.rotX?.text = "\(x / 100000)"
         self.rotY?.text = "\(Double(round(attitude.pitch * 100000) / 100000))"
+    }
+    
+    func translateX( xP: Double) -> Double {
+        var x = xP
+        if x > 1.5 {
+            x = 3 - x
+        } else if x < -1.5 {
+            x = -(x + 3)
+        }
+        x = x / 1.5
+        return round(x * 100000)
     }
     
     func arrangeFrame(attitude: CMAttitude) {
         
         let XBarImageCurrentY = XbarRect?.origin.y
         
-        XbarImage?.frame = CGRect(x: (XbarImage?.frame.origin.x)!, y: (XBarImageCurrentY! + CGFloat(round(attitude.pitch * 100000) / 10000 * 3.5)), width: (XbarImage?.frame.size.width)!, height: (XbarImage?.frame.size.height)!)
+        XbarImage?.frame = CGRect(x: (XbarImage?.frame.origin.x)!, y: (XBarImageCurrentY! - CGFloat(round(attitude.pitch * 100000) / 10000 * 5)), width: (XbarImage?.frame.size.width)!, height: (XbarImage?.frame.size.height)!)
         
         let YBarImageCurrentX = YbarRect?.origin.x
         
-        YbarImage?.frame = CGRect(x: YBarImageCurrentX! + CGFloat(round(attitude.roll * 100000) / 10000 * 3.5), y: (YbarImage?.frame.origin.y)!, width: (YbarImage?.frame.size.width)!, height: (YbarImage?.frame.size.height)!)
+        let diffX = round(translateX(xP: round(attitude.roll * 100000) / 100000)) / 10000 * 5
+        
+        YbarImage?.frame = CGRect(x: YBarImageCurrentX! - CGFloat(diffX), y: (YbarImage?.frame.origin.y)!, width: (YbarImage?.frame.size.width)!, height: (YbarImage?.frame.size.height)!)
         
         let XYBarImageCurrentY = XYbarRect?.origin.y
         let XYBarImageCurrentX = XYbarRect?.origin.x
         
-        XYBarImage?.frame = CGRect(x: XYBarImageCurrentX! + CGFloat(round(attitude.roll * 100000) / 10000 * 3.5), y: (XYBarImageCurrentY! + CGFloat(round(attitude.pitch * 100000) / 10000 * 3.5)), width: (XYBarImage?.frame.size.width)!, height: (XYBarImage?.frame.size.height)!)
-        
-        
-        
-        
-       
+        XYBarImage?.frame = CGRect(x: XYBarImageCurrentX! - CGFloat(diffX), y: (XYBarImageCurrentY! - CGFloat(round(attitude.pitch * 100000) / 10000 * 4)), width: (XYBarImage?.frame.size.width)!, height: (XYBarImage?.frame.size.height)!)
         
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
