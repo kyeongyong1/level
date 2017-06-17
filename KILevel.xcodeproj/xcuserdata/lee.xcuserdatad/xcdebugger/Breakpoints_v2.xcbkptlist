@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KILevel/ViewController.swift"
+            timestampString = "519401755.512612"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "arrangeFrame(attitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KILevel.ViewController.arrangeFrame (attitude : __ObjC.CMAttitude) -&gt; ()"
+                  moduleName = "KILevel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Desktop/Xcode/level/KILevel/ViewController.swift"
+                  timestampString = "519402128.592147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1356">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KILevel.ViewController.arrangeFrame (attitude : __ObjC.CMAttitude) -&gt; ()"
+                  moduleName = "KILevel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Desktop/Xcode/level/KILevel/ViewController.swift"
+                  timestampString = "519402128.594534"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "3828">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
